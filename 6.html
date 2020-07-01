@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript">
+		function val()
+		{
+			var p=document.getElementById("name");
+			var alpha = /^[A-Za-z]+$/;
+
+		/*	if(Nan(p.value))
+			{
+				
+				return true;
+			}
+			else{
+				alert("select only alphabets");
+				return false;
+			} */
+			
+			if(p.value.match(alpha))
+			{
+				 return true;	
+			}
+			else {
+                     alert("only alphabets");
+				return false;   			
+			}
+	</script>
+</head>
+<body>
+	<form  method ="get" onsubmit="return val()" acion="handle.php">
+		<p>Name:</p>
+		<input id="name" placeholder="only alphabets "
+		type="text"/><br>
+		<p>Phone:</p>
+		<input id ="num" placeholder="  "
+		type="number"/>
+		<br><br>
+		<button type ="submit">Submit</button>
+	</form>
+</body>
+	</html>

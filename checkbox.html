@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript">
+		function check() 
+				{	var h=document.getElementById("html").checked;
+			var c=document.getElementById("css").checked;
+			var j=document.getElementById("javs").checked;
+			/*f=h||c||j;
+			
+			      if(f=="false")*/
+			      	if((h=="")&&(c=="")&&(j==""))
+			       {
+				      alert("select atleast one Course");
+				        return false;
+			        }
+			         
+			          else   {
+				          return true;
+			                 } 
+			    }
+			</script></head>
+			<body>
+			<form onsubmit=" return check()" action="http://www.google.co.in" >
+		<p>Course:</p>
+  <input type="checkbox" id="html">html
+
+  <input type="checkbox" id="css">css
+ 
+  <input type="checkbox" id="javs">javascript
+		<br>
+		<button type ="submit">Submit</button>
+	</form>
+</body></html>	

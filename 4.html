@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+	<p id ="dem"></p>
+<table style ="width:25%">
+<tr>
+<th>subject</th>
+<th>marks</th>
+</tr>
+<tr>
+<td>maths</td>
+<td>10</td>
+</tr>
+<tr>
+<td>english</td>
+<td>9</td>
+</tr>
+<tr>
+<td>telugu</td>
+<td>8</td>
+</tr>
+<tr>
+<td>hindi</td>
+<td>7</td>
+</tr>
+<tr>
+	<td>total average</td>
+<td> <script>
+	var b = ( 10 + 9 + 8 + 7 ) / 4;
+	document.getElementById("dem").innerHTML = + b ;
+</script></td>
+</tr>
+</table>
+</body>
+</html>
