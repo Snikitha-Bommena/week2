@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id ="dem"></p>
+<p id = "demo"></p>
+<p id = "file">  </p>
+<p id = "p"></p>
+<script>
+	var b = 50;
+	var c = "h";
+	 var  d = 0.3;
+	 var message;
+	 message = document.getElementById("p");
+	 message.innerHTML = " ";
+	
+	document.getElementById("demo").innerHTML = "c is " + c ;
+	document.write("output:-");
+	
+	
+	document.getElementById("file").innerHTML = "d is" + d ;
+    try{
+    	if (isNaN(c)) throw "too big so can not take";
+       }
+       catch(e)
+       {
+    	message.innerHtml = " input is" + e;
+    }
+    document.getElementById("dem").innerHTML = "b is" + b ;
+if ((b > 10) && ( b < 100))
+  {document.write("output:-");
+	document.write(" It lies between 10 and 100.");
+   }
+	else{
+		document.write("Number is not in between 10 and 100")
+	    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id ="dem"></p>
+<p id = "demo"></p>
+<script>
+	var b = 50;
+	var c = 120;
+	document.getElementById("dem").innerHTML = + b ;
+if ((b > 10) && ( b < 100))
+{document.write("output:-");
+	document.write(" It lies between 10 and 100.");
+}
+	else{
+		document.write("Number is not in between 10 and 100")
+	    }
+	document.getElementById("demo").innerHTML = + c ;
+	document.write("output:-");
+	switch((c > 10) && (c < 100)){
+		case false: 
+		  document.write("Number is not in between 10 and 100")
+		  break;
+		case true: 
+		document.write(" It lies between 10 and 100");
+		break;
+	}
+</script>
+
+</body>
+</html>
